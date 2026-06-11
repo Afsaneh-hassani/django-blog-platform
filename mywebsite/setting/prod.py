@@ -27,13 +27,17 @@ DATABASES = {
 }
 
 
-STATIC_ROOT= BASE_DIR/'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_ROOT= BASE_DIR/'media'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 STATICFILES_DIRS = [
     BASE_DIR / "statics",
 ]
+
+STATICFILES_STORAGE = (
+    'whitenoise.storage.CompressedManifestStaticFilesStorage'
+)
 
 
 SECURE_BROWSER_XSS_FILTER= True
