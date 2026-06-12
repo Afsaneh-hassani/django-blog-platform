@@ -9,7 +9,11 @@ SECRET_KEY = 'django-insecure-f8&_$fi+$oudui)6k7t34bsjg7sa6om+@rb%zxu9f6!m6dd!99
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'django-blog-platform-olah.onrender.com',
+]
 
 #site frameworks
 SITE_ID=2
